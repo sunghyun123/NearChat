@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 메인 제목 -->
+
+    <LinearLayout
+        android:id="@+id/titleContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp">
+
+        <ImageView
+            android:id="@+id/chatimg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/chat2"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위치 기반 채팅"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 부제 같은거 -->
+    <TextView
+        android:id="@+id/subtitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 주변 사람들과 쉽게 소통해 보세요"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/titleContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- 구글 로그인 버튼 -->
+    <Button
+        android:id="@+id/googleLoginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Google 계정으로 로그인"
+        android:backgroundTint="#4285F4"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/subtitleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginBottom="16dp"/>
+
+<!--    &lt;!&ndash; 페이스북 로그인 버튼 &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/facebookLoginButton"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Facebook"-->
+<!--        android:backgroundTint="#3b5998"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/googleLoginButton"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginBottom="16dp"/>-->
+
+<!--    &lt;!&ndash; 네이버 로그인 버튼 &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/naverLoginButton"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Naver"-->
+<!--        android:backgroundTint="#2DB400"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/facebookLoginButton"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginBottom="16dp"/>-->
+
+
+    <TextView
+        android:id="@+id/subtitleTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계정이 없으신가요? 회원가입"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/googleLoginButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/subtitleTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인 정보를 잊으셨나요?"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/subtitleTextView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

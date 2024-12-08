@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 거리 필터 설정 -->
+    <TextView
+        android:id="@+id/distanceFilterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="거리 필터 설정"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <SeekBar
+        android:id="@+id/distanceSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="10"/>
+
+    <TextView
+        android:id="@+id/distanceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50m"
+        android:layout_marginTop="8dp"/>
+
+    <!-- 알림 설정 -->
+    <TextView
+        android:id="@+id/notificationSettingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="알림 설정"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Switch
+        android:id="@+id/notificationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"/>
+
+    <!-- 차단 사용자 목록 관리 -->
+    <TextView
+        android:id="@+id/blockedUserListLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="차단 사용자 목록 관리"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/blockedUserRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <!-- 계정 설정 -->
+    <TextView
+        android:id="@+id/accountSettingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계정 설정"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/deleteAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="계정 삭제"
+        android:layout_marginBottom="8dp"/>
+</LinearLayout>

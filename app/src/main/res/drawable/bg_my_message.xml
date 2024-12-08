@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#3F51B5" /> <!-- 내 메시지의 배경색: 파란색 -->
+    <corners android:radius="16dp" /> <!-- 둥근 모서리 -->
+    <padding
+        android:left="16dp"
+        android:top="8dp"
+        android:right="16dp"
+        android:bottom="8dp" /> <!-- 여백을 추가 -->
+</shape>
